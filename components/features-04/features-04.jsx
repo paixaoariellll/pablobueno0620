@@ -9,7 +9,6 @@ import {
 } from "@/components/ui/accordion";
 import { Home, Truck, Film } from "lucide-react";
 
-// Dados dos projetos de vídeo do Pablo
 const projectVideos = [
   {
     icon: Home,
@@ -28,13 +27,9 @@ const projectVideos = [
 ];
 
 const ProjectGallery = () => {
-  // Estado para controlar qual vídeo está ativo no painel de visualização.
-  // Começa com 'item-0' (Casa de Alto Padrão)
   const [activeVideoIndex, setActiveVideoIndex] = useState(0);
 
-  // Função para lidar com a mudança do Acordeão e atualizar o vídeo ativo
   const handleAccordionChange = (value) => {
-    // Extrai o índice do valor (ex: 'item-1' -> 1)
     if (value) {
       const index = parseInt(value.split("-")[1]);
       setActiveVideoIndex(index);
@@ -46,7 +41,6 @@ const ProjectGallery = () => {
   return (
     <div className='py-12 md:py-20 px-6'>
       <div className='max-w-7xl w-full mx-auto grid md:grid-cols-2 gap-12 items-start'>
-        {/* Lado Esquerdo: Lista de Projetos (Acordeão) */}
         <div>
           <h2 className='text-3xl md:text-4xl font-extrabold tracking-tight mb-8 text-primary'>
             Projetos em Destaque
@@ -81,16 +75,13 @@ const ProjectGallery = () => {
           </Accordion>
         </div>
 
-        {/* Lado Direito: Visualização do Vídeo Ativo - AJUSTADO PARA VERTICAL */}
         <div className='sticky top-12 w-full h-full rounded-xl p-4 shadow-xl flex justify-center'>
-          {/* O container interno agora força um tamanho de tela vertical (mobile/Instagram Reel) */}
           <div className='w-full max-w-xs md:max-w-sm'>
             <h3 className='text-xl font-bold mb-3 text-primary flex items-center gap-2'>
               <Film className='h-5 w-5' />
               {activeVideo.title}
             </h3>
 
-            {/* Container do Vídeo: Usando aspect-[9/16] para vertical */}
             <div className='relative w-full aspect-[9/16] overflow-hidden rounded-lg'>
               <video
                 key={activeVideo.videoPath}
@@ -104,8 +95,6 @@ const ProjectGallery = () => {
                 Seu navegador não suporta a tag de vídeo.
               </video>
             </div>
-
-            {/* Legenda do Vídeo */}
           </div>
         </div>
       </div>
