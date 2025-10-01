@@ -57,16 +57,7 @@ const Hero07 = () => {
               size='lg'
               className='rounded-full text-base shadow-none border-yellow-500 text-yellow-500 hover:bg-white/10 transition px-8'
             >
-              <CirclePlay className='mr-2 h-5 w-5' /> Aplicações em Vídeo
-            </Button>
-          </Link>
-          <Link href='https://www.instagram.com/pablobueno0620' passHref>
-            <Button
-              variant='outline'
-              size='lg'
-              className='rounded-full text-base shadow-none border-yellow-500 text-yellow-500 hover:bg-white/10 transition px-8'
-            >
-              <CirclePlay className='mr-2 h-5 w-5' /> Aplicações em Vídeo
+              <CirclePlay className='mr-2 h-5 w-5' /> Veja nosso Instagram
             </Button>
           </Link>
         </div>
