@@ -1,3 +1,4 @@
+import Features02Page from "@/components/features-02/features-02";
 import ProjectGallery from "@/components/features-06/features-06";
 import Hero07 from "@/components/hero-07/hero-07";
 import Diferenciais from "@/components/stats-01/stats-01";
@@ -14,6 +15,7 @@ export default function HomePage() {
       <WhoIs />
       <Timeline />
       <Diferenciais />
+      <Features02Page />
       <ProjectGallery />
     </div>
   );

@@ -4,7 +4,7 @@ import Logomarca from "../start/logomarca";
 
 const Navbar04Page = () => {
   return (
-    <nav className='fixed z-50 top-6 inset-x-4 h-16 bg-background border dark:border-slate-700/70 max-w-(--breakpoint-xl) mx-auto rounded-full'>
+    <nav className='fixed z-50 top-2 inset-x-4 h-16 bg-background border dark:border-slate-700/70 max-w-(--breakpoint-xl) mx-auto rounded-full'>
       <div className='h-full flex items-center justify-between mx-auto px-6'>
         <Logomarca />
 

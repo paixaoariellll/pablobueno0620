@@ -14,6 +14,7 @@ const navItems = [
   { href: "#curriculum", label: "Currículum" },
   { href: "#trajetoria", label: "Trajetória" },
   { href: "#diferenciais", label: "Diferenciais" },
+  { href: "#imagens", label: "Imagens" },
   { href: "#galeria", label: "Galeria" },
 ];
 
