@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 import { CirclePlay } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { ImageZoom } from "@/components/ui/shadcn-io/image-zoom";
 
 const Hero07 = () => {
   return (
@@ -13,8 +14,8 @@ const Hero07 = () => {
     >
       <AnimatedGridPattern
         numSquares={50}
-        maxOpacity={0.4}
-        duration={3}
+        maxOpacity={0.2}
+        duration={2}
         className={cn(
           "mask-[radial-gradient(600px_circle_at_center,white,transparent)]",
           "inset-x-0 h-full skew-y-12"
@@ -22,14 +23,16 @@ const Hero07 = () => {
       />
 
       <div className='relative z-10 text-center max-w-7xl pt-20 pb-16 sm:py-32'>
-        <Image
-          src='/images/logo horizontal.svg'
-          alt='Logomarca Pablo Bueno'
-          width={700}
-          height={150}
-          className='sm:flex hidden object-contain mx-auto mb-6 p-2'
-          unoptimized
-        />
+        <ImageZoom>
+          <Image
+            src='/images/logo horizontal.svg'
+            alt='Logomarca Pablo Bueno'
+            width={700}
+            height={150}
+            className='sm:flex hidden object-contain mx-auto mb-6 p-2'
+            unoptimized
+          />
+        </ImageZoom>
 
         <h1 className='text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight mb-4'>
           Pintura <span className='text-chart-3'> Residencial </span>&

@@ -5,7 +5,7 @@ import React from "react";
 const VerticalVideoPlayer = ({ videoPath, isGroup = false }) => (
   <div
     className={`w-full ${
-      isGroup ? "max-w-xs" : "max-w-sm"
+      isGroup ? "max-w-[280px] sm:max-w-xs" : "max-w-sm sm:max-w-md"
     } aspect-[9/16] bg-accent rounded-xl shadow-2xl p-2`}
   >
     <div className='relative w-full h-full overflow-hidden rounded-lg'>
@@ -25,6 +25,13 @@ const VerticalVideoPlayer = ({ videoPath, isGroup = false }) => (
 );
 
 const projectVideos = [
+  {
+    category: "Institucional",
+    title: "Escola de Inglês - Pintura Completa Residencial",
+    details:
+      "Projeto completo de pintura em escola de inglês. Incluiu preparação de superfícies, aplicação de massa corrida, pintura de paredes internas e externas, acabamento profissional com foco na durabilidade e estética para ambiente educacional.",
+    videoPaths: ["/videos/capcut.mp4"],
+  },
   {
     category: "Residencial de Luxo",
     title: "Casa de Alto Padrão - Acabamento Impecável",
@@ -100,7 +107,7 @@ const ProjectGallery = () => {
             >
               <div className='w-full basis-1/2 flex justify-center'>
                 {project.videoPaths.length > 1 ? (
-                  <div className='w-full grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-xl'>
+                  <div className='w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-3 max-w-2xl mx-auto'>
                     {project.videoPaths.map((path, idx) => (
                       <div key={path} className='flex flex-col items-center'>
                         <p className='text-xs font-semibold mb-1 text-muted-foreground'>

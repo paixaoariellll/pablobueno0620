@@ -10,12 +10,13 @@ import {
 
 // Estrutura dos links de navegação
 const navItems = [
-  { href: "#inicio", label: "Início" },
-  { href: "#curriculum", label: "Currículum" },
-  { href: "#trajetoria", label: "Trajetória" },
-  { href: "#diferenciais", label: "Diferenciais" },
-  { href: "#imagens", label: "Imagens" },
-  { href: "#galeria", label: "Galeria" },
+  { href: "/", label: "Início" },
+  { href: "/videos", label: "videos" },
+  { href: "/#curriculum", label: "Currículum" },
+  { href: "/#trajetoria", label: "Trajetória" },
+  { href: "/#diferenciais", label: "Diferenciais" },
+  { href: "/#imagens", label: "Imagens" },
+  { href: "/#galeria", label: "Galeria" },
 ];
 
 export const NavMenu = (props) => (
