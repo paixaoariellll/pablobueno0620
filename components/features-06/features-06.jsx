@@ -6,7 +6,7 @@ const VerticalVideoPlayer = ({ videoPath, isGroup = false }) => (
   <div
     className={`w-full ${
       isGroup ? "max-w-[280px] sm:max-w-xs" : "max-w-sm sm:max-w-md"
-    } aspect-[9/16] bg-accent rounded-xl shadow-2xl p-2`}
+    } aspect-9/16 bg-accent rounded-xl shadow-2xl p-2`}
   >
     <div className='relative w-full h-full overflow-hidden rounded-lg'>
       <video

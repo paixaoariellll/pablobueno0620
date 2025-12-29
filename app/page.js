@@ -1,3 +1,4 @@
+
 import HomePage from "@/components/home-page";
 import { createMetadata } from "@/lib/seo";
 
