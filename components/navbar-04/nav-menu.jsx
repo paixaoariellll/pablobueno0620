@@ -11,7 +11,6 @@ import {
 // Estrutura dos links de navegação
 const navItems = [
   { href: "/", label: "Início" },
-  { href: "/videos", label: "videos" },
   { href: "/#curriculum", label: "Currículum" },
   { href: "/#trajetoria", label: "Trajetória" },
   { href: "/#diferenciais", label: "Diferenciais" },
