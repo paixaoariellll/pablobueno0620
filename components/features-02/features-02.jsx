@@ -93,7 +93,7 @@ export default function PortfolioPage() {
                       {service.after.map((img, i) => (
                         <div
                           key={i}
-                          className='relative flex-shrink-0 w-[90%] sm:w-[48%] lg:w-[32%] aspect-[4/3] rounded-xl overflow-hidden shadow-sm'
+                          className='relative shrink-0 w-[90%] sm:w-[48%] lg:w-[32%] aspect-4/3 rounded-xl overflow-hidden shadow-sm'
                         >
                           <Image
                             src={img}
